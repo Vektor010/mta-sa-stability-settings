@@ -1,0 +1,15 @@
+name: Feature Request
+description: Propose a new optimization script, config preset, or diagnostic tool
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please outline the proposed improvement and its technical rationale.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe what should be added or modified
+    validations:
+      required: true

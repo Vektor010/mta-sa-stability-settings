@@ -1,0 +1,43 @@
+<mainconfig>
+    <settings>
+        <!-- 1. Память стриминга: 384 МБ — защита от краша памяти 32-бит и исчезновения текстур -->
+        <streaming_memory>384</streaming_memory>
+
+        <!-- 2. Режим экрана: 2 = Окно без рамки (плавный Alt-Tab без вылетов D3D9) -->
+        <display_fullscreen_style>2</display_fullscreen_style>
+        <display_windowed>0</display_windowed>
+        <aspect_ratio>0</aspect_ratio>
+        <hud_match_aspect_ratio>1</hud_match_aspect_ratio>
+
+        <!-- 3. Графика: Анизотропка 16x (4), сглаживание выключено или 1x, эффекты Высокие -->
+        <anisotropic>4</anisotropic>
+        <antialiasing>1</antialiasing>
+        <fx_quality>2</fx_quality>
+
+        <!-- 4. Модели машин и скинов в высоком качестве -->
+        <high_detail_vehicles>1</high_detail_vehicles>
+        <high_detail_peds>1</high_detail_peds>
+
+        <!-- 5. Отключение багованных эффектов GTA SA (устраняет утечки D3D9 и мерцание винилов) -->
+        <volumetric_shadows>0</volumetric_shadows>
+        <grass>0</grass>
+        <heat_haze>0</heat_haze>
+        <tyre_smoke_enabled>0</tyre_smoke_enabled>
+        <blur>0</blur>
+        <corona_reflections>0</corona_reflections>
+        <dynamic_ped_shadows>0</dynamic_ped_shadows>
+
+        <!-- 6. Браузер CEF: программный рендеринг убирает фризы F1-F11 спидометров -->
+        <browser_enable_gpu>0</browser_enable_gpu>
+        <browser_speed>1</browser_speed>
+
+        <!-- 7. Фильтрация спама в логах (убирает микрофризы диска) -->
+        <filter_duplicate_log_lines>1</filter_duplicate_log_lines>
+        <max_clientscript_log_kb>1024</max_clientscript_log_kb>
+
+        <!-- 8. Приоритет процесса -->
+        <process_priority>1</process_priority>
+        <process_cpu_affinity>1</process_cpu_affinity>
+        <process_dpi_aware>0</process_dpi_aware>
+    </settings>
+</mainconfig>

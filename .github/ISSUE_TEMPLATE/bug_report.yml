@@ -1,0 +1,30 @@
+name: Bug Report
+description: Report a stability issue, crash, or configuration failure
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please verify you are using the latest `coreconfig.xml` and RTSS profile.
+  - type: input
+    id: server
+    attributes:
+      label: Server Name / Build
+      description: e.g., CCDPlanet #1, MTA Province, Radmir, MTA 1.6.0
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: System Specifications
+      description: GPU, CPU, RAM, Windows build version
+      placeholder: Windows 11 Pro 24H2, RTX 5080, Ryzen 7 9850X3D, 64GB RAM
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description & Logs
+      description: Attach relevant entries from clientscript.log or crash offsets
+    validations:
+      required: true

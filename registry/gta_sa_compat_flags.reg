@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; ZeroStutter-MTA: Prevent DWM forced presentation flip on gta_sa.exe
+[HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers]
+"D:\\CCD\\GTA\\gta_sa.exe"="~ DISABLEDXMAXIMIZEDWINDOWEDMODE"

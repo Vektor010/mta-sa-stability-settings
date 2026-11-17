@@ -1,0 +1,17 @@
+# ZeroStutter-MTA .gitignore
+# System & runtime logs
+*.log
+*.txt
+*.dmp
+*.tmp
+
+# User-specific runtime directories
+_backup/
+_reports/
+logs/
+cache/
+
+# OS artifacts
+Thumbs.db
+Desktop.ini
+.DS_Store

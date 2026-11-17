@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; ZeroStutter-MTA: Restore default Windows Multi-Plane Overlay (MPO) behavior
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
+"OverlayTestMode"=-

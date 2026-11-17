@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; ZeroStutter-MTA: Disable Multi-Plane Overlays (MPO) for Windowed/Borderless games
+; Eliminates DWM frame pacing stutter and black flash issues in D3D9 borderless mode
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
+"OverlayTestMode"=dword:00000005

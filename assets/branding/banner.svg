@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="320">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10"/>
+      <stop offset="60%" stop-color="#0B1019"/>
+      <stop offset="100%" stop-color="#05070B"/>
+    </linearGradient>
+
+    <!-- Neon Accents -->
+    <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF88"/>
+      <stop offset="50%" stop-color="#00C8FF"/>
+      <stop offset="100%" stop-color="#8B5CFF"/>
+    </linearGradient>
+
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D4E4F5"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Gaming Background -->
+  <rect width="1000" height="320" rx="16" fill="url(#bg-grad)" stroke="#162235" stroke-width="2"/>
+
+  <!-- Cyber Grid Pattern -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <path d="M 0 40 L 1000 40 M 0 80 L 1000 80 M 0 120 L 1000 120 M 0 160 L 1000 160 M 0 200 L 1000 200 M 0 240 L 1000 240 M 0 280 L 1000 280"/>
+    <path d="M 100 0 L 100 320 M 200 0 L 200 320 M 300 0 L 300 320 M 400 0 L 400 320 M 500 0 L 500 320 M 600 0 L 600 320 M 700 0 L 700 320 M 800 0 L 800 320 M 900 0 L 900 320"/>
+  </g>
+
+  <!-- Cyberpunk Corner Brackets -->
+  <g stroke="#00C8FF" stroke-width="2" fill="none">
+    <path d="M 12 36 L 12 12 L 36 12"/>
+    <path d="M 988 36 L 988 12 L 964 12" stroke="#39FF88"/>
+    <path d="M 12 284 L 12 308 L 36 308" stroke="#8B5CFF"/>
+    <path d="M 988 284 L 988 308 L 964 308" stroke="#39FF88"/>
+  </g>
+
+  <!-- Top System Status Header -->
+  <rect x="50" y="24" width="160" height="24" rx="4" fill="#0E1624" stroke="#1E2F48"/>
+  <circle cx="64" cy="36" r="4" fill="#39FF88" filter="url(#neon-glow)"/>
+  <text x="76" y="40" font-family="'Segoe UI', -apple-system, monospace" font-size="11" font-weight="700" fill="#39FF88" letter-spacing="1.5">ENGINE ACTIVE</text>
+
+  <text x="950" y="40" font-family="'Segoe UI', -apple-system, monospace" font-size="11" font-weight="600" fill="#587094" text-anchor="end" letter-spacing="1">D3D9 NATIVE // 32-BIT LAA SAFE</text>
+
+  <!-- Central Brand Emblem / Badge -->
+  <g transform="translate(60, 75)">
+    <polygon points="45,0 90,26 90,78 45,104 0,78 0,26" fill="#0C121D" stroke="url(#neon-grad)" stroke-width="2.5" filter="url(#neon-glow)"/>
+    <path d="M 28 52 L 48 24 L 54 24 L 42 50 L 62 50 L 32 82 L 38 56 Z" fill="#39FF88"/>
+  </g>
+
+  <!-- Main Headline -->
+  <text x="180" y="125" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-size="44" font-weight="900" fill="url(#text-grad)" letter-spacing="-0.5">
+    MTA:SA <tspan fill="#39FF88">STABILITY</tspan> ENGINE
+  </text>
+  <text x="182" y="160" font-family="'Segoe UI', -apple-system, Roboto, monospace" font-size="15" font-weight="700" fill="#00C8FF" letter-spacing="3">
+    STABILITY. PERFORMANCE. CONTROL.
+  </text>
+
+  <!-- Subtitle -->
+  <text x="182" y="192" font-family="'Segoe UI', -apple-system, sans-serif" font-size="14" font-weight="400" fill="#94A7C0">
+    Deterministic Frame Pacing, 384MB Memory Floor &amp; Zero-Spam Architecture for Multi Theft Auto.
+  </text>
+
+  <!-- Technical Feature Pills -->
+  <g transform="translate(182, 222)">
+    <!-- Pill 1: D3D9 Isolation -->
+    <rect x="0" y="0" width="144" height="32" rx="6" fill="#0F1726" stroke="#00C8FF" stroke-width="1.2"/>
+    <text x="72" y="20" font-family="monospace" font-size="11" font-weight="700" fill="#00C8FF" text-anchor="middle">RTSS ISOLATED</text>
+
+    <!-- Pill 2: 384MB Memory -->
+    <rect x="156" y="0" width="144" height="32" rx="6" fill="#0F1726" stroke="#39FF88" stroke-width="1.2"/>
+    <text x="228" y="20" font-family="monospace" font-size="11" font-weight="700" fill="#39FF88" text-anchor="middle">384MB MEM FLOOR</text>
+
+    <!-- Pill 3: Anti-Cheat Safe -->
+    <rect x="312" y="0" width="144" height="32" rx="6" fill="#0F1726" stroke="#8B5CFF" stroke-width="1.2"/>
+    <text x="384" y="20" font-family="monospace" font-size="11" font-weight="700" fill="#8B5CFF" text-anchor="middle">FAIRPLAYKD SAFE</text>
+
+    <!-- Pill 4: Zero Spam -->
+    <rect x="468" y="0" width="144" height="32" rx="6" fill="#0F1726" stroke="#00C8FF" stroke-width="1.2"/>
+    <text x="540" y="20" font-family="monospace" font-size="11" font-weight="700" fill="#00C8FF" text-anchor="middle">ZERO LOG SPAM</text>
+
+    <!-- Pill 5: MPO Fix -->
+    <rect x="624" y="0" width="144" height="32" rx="6" fill="#0F1726" stroke="#39FF88" stroke-width="1.2"/>
+    <text x="696" y="20" font-family="monospace" font-size="11" font-weight="700" fill="#39FF88" text-anchor="middle">DWM MPO FIX</text>
+  </g>
+
+  <!-- Bottom Accent Stripe -->
+  <rect x="0" y="316" width="1000" height="4" fill="url(#neon-grad)"/>
+</svg>
