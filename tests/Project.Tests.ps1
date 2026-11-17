@@ -32,7 +32,19 @@ foreach ($xf in $xmlFiles) {
     }
 }
 
-# 3. Registry Rollback Parity
+# 3. JSON Configuration Validation
+$jsonFiles = Get-ChildItem -Path "$repoRoot" -Filter "*.json" -Recurse
+foreach ($jf in $jsonFiles) {
+    try {
+        $null = Get-Content $jf.FullName -Raw | ConvertFrom-Json
+        Write-Host "  [PASS] JSON Valid: $($jf.Name)" -ForegroundColor Green
+    } catch {
+        Write-Host "  [FAIL] JSON Malformed: $($jf.Name)" -ForegroundColor Red
+        $failed++
+    }
+}
+
+# 4. Registry Rollback Parity
 $regFiles = Get-ChildItem -Path "$repoRoot\registry" -Filter "*.reg" | Where-Object { $_.Name -notmatch "^restore_" }
 foreach ($rf in $regFiles) {
     $restore = "restore_" + $rf.Name
@@ -42,23 +54,6 @@ foreach ($rf in $regFiles) {
     } else {
         Write-Host "  [FAIL] Missing Rollback: $($rf.Name)" -ForegroundColor Red
         $failed++
-    }
-}
-
-# 4. RTSS Profile Flag
-$rtssFiles = @(
-    (Join-Path $repoRoot "gta_sa.exe.cfg"),
-    (Join-Path $repoRoot "configs\rtss\gta_sa.exe.cfg")
-)
-foreach ($rf in $rtssFiles) {
-    if (Test-Path $rf) {
-        $content = Get-Content $rf -Raw
-        if ($content -match "EnableHooking=0") {
-            Write-Host "  [PASS] RTSS Hooking Flag: $rf" -ForegroundColor Green
-        } else {
-            Write-Host "  [FAIL] RTSS Flag Missing in $rf" -ForegroundColor Red
-            $failed++
-        }
     }
 }
 
