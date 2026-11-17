@@ -59,6 +59,7 @@
 | :--- | :--- | :--- |
 | **[`coreconfig.xml`](coreconfig.xml)** | **Главный конфиг клиента MTA** (ESC): память стриминга 384 МБ, окно без рамки, фильтр спама логов, отключение GPU в CEF | `D:\CCD\MTA\config\coreconfig.xml` |
 | **[`server_settings.json`](server_settings.json)** | **Настройки САМОГО СЕРВЕРА CCDPlanet** (F3): отключение тяжелых SSAO, DOF, дыма дрифта, правильные отражения 2023 | `D:\CCD\mods\deathmatch\priv\<ID_сервера>\settings\settings.json` |
+| **[`handling.cfg`](handling.cfg)** | **Файл физики и характеристик транспорта GTA San Andreas** (базовые лимиты массы, центра тяжести, трансмиссии) | `D:\CCD\GTA\data\handling.cfg` |
 | **[`chatboxpresets.xml`](chatboxpresets.xml)** | **Пресеты оформления игрового чата** | `D:\CCD\MTA\config\chatboxpresets.xml` |
 | **[`clean_and_play.bat`](clean_and_play.bat)** | **1-клик лаунчер**: очищает мусорные логи перед входом и запускает игру с приоритетом `AboveNormal` | Рабочий стол / папка с игрой |
 | **[`apply_gta_optimizations.bat`](apply_gta_optimizations.bat)** | **1-клик оптимизация Windows и GTA**: отключает статтеры DWM MPO и применяет флаг совместимости `gta_sa.exe` | Запустить от имени Администратора |

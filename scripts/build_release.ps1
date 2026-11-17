@@ -7,6 +7,7 @@ New-Item -ItemType Directory -Path "$tempDir\registry" -Force | Out-Null
 
 Copy-Item "D:\CCD\mta-settings-pack\coreconfig.xml" $tempDir -Force
 Copy-Item "D:\CCD\mta-settings-pack\server_settings.json" $tempDir -Force
+Copy-Item "D:\CCD\mta-settings-pack\handling.cfg" $tempDir -Force
 Copy-Item "D:\CCD\mta-settings-pack\chatboxpresets.xml" $tempDir -Force
 Copy-Item "D:\CCD\mta-settings-pack\clean_and_play.bat" $tempDir -Force
 Copy-Item "D:\CCD\mta-settings-pack\apply_gta_optimizations.bat" $tempDir -Force
