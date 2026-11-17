@@ -108,10 +108,10 @@
 | Файл | Назначение | Папка установки |
 | :--- | :--- | :--- |
 | **[`coreconfig.xml`](coreconfig.xml)** | Конфиг клиента MTA (стриминг, окно без рамки, фильтр спама) | `MTA\config\` |
-| **[`server_settings.json`](server_settings.json)** | Настройки сервера CCDPlanet (F3: выкл SSAO/DOF, отражения) | `mods\deathmatch\priv\<ID>\settings\` |
+| **[`server_settings.json`](server_settings.json)** | Настройки сервера CCDPlanet (F3: выкл SSAO/DOF, отражения) | `mods\deathmatch\`<br/>`priv\<ID>\settings\` |
 | **[`handling.cfg`](handling.cfg)** | Базовая физика транспорта GTA San Andreas (масса, подвеска) | `GTA\data\` |
 | **[`chatboxpresets.xml`](chatboxpresets.xml)** | Пресеты прозрачности и шрифтов чата MTA | `MTA\config\` |
-| **[`clean_and_play.bat`](clean_and_play.bat)** | 1-клик лаунчер: очистка спама логов + запуск с приоритетом | Корень игры / Desktop |
+| **[`clean_and_play.bat`](clean_and_play.bat)** | 1-клик лаунчер: очистка логов + запуск с приоритетом | Корень игры / Desktop |
 | **[`apply_gta_optimizations.bat`](apply_gta_optimizations.bat)** | 1-клик твик Windows: отключение DWM MPO и флаг gta_sa.exe | Запуск от Администратора |
 
 ---

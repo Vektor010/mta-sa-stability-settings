@@ -1,9 +1,14 @@
 <mainconfig>
     <settings>
+        <!-- Никнейм по умолчанию (произвольный плейсхолдер, смените на свой в игре) -->
+        <nick>Player_ZeroStutter_Ultra_2026</nick>
+        <locale>ru_RU</locale>
+
         <!-- 1. Память стриминга: 384 МБ (эталон) или 512 МБ (максимум для тяжелых автопарков CCDPlanet на мощных ПК). Больше 512 ставить нельзя (краш 0xC0000005)! -->
         <streaming_memory>384</streaming_memory>
 
         <!-- 2. Режим экрана: 2 = Окно без рамки (плавный Alt-Tab без вылетов D3D9) -->
+        <display_resolution>2560x1440x32</display_resolution>
         <display_fullscreen_style>2</display_fullscreen_style>
         <display_windowed>0</display_windowed>
         <aspect_ratio>0</aspect_ratio>
@@ -13,6 +18,7 @@
         <anisotropic>4</anisotropic>
         <antialiasing>1</antialiasing>
         <fx_quality>2</fx_quality>
+        <fov>70</fov>
 
         <!-- 4. Модели машин и скинов в высоком качестве -->
         <high_detail_vehicles>1</high_detail_vehicles>
@@ -35,7 +41,7 @@
         <filter_duplicate_log_lines>1</filter_duplicate_log_lines>
         <max_clientscript_log_kb>1024</max_clientscript_log_kb>
 
-        <!-- 8. Приоритет процесса -->
+        <!-- 8. Приоритет процесса и привязка к ядрам -->
         <process_priority>1</process_priority>
         <process_cpu_affinity>1</process_cpu_affinity>
         <process_dpi_aware>0</process_dpi_aware>
